@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chez Mouss | Grillades, kebab & sandwichs au Blanc-Mesnil</title>
+    <meta name="description" content="Maquette de site vitrine pour Chez Mouss au Blanc-Mesnil : grillades, kebab, kafta, sandwichs, livraison, adresse, appel direct et itinéraire.">
+    <meta name="keywords" content="Chez Mouss, restaurant Le Blanc-Mesnil, kebab, grillades, kafta, sandwichs, livraison">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Chez Mouss",
+      "servesCuisine": ["Grillades", "Kebab", "Sandwichs"],
+      "telephone": "+33954630987",
+      "priceRange": "10€-20€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Rue de la Concorde",
+        "addressLocality": "Le Blanc-Mesnil",
+        "postalCode": "93150",
+        "addressCountry": "FR"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#accueil" class="nav-logo">
+            <span class="logo-mark">CM</span>
+            <span>CHEZ MOUSS</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#menu">Menu</a>
+            <a href="#specialites">Spécialités</a>
+            <a href="#avis-section">Avis</a>
+            <a href="#adresse">Adresse</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero : le client doit comprendre immédiatement quoi manger, où appeler et où aller. -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="badge-status-top"><i class="fa-solid fa-fire-burner"></i> Grillades, kebab & sandwichs</p>
+            <h1>Chez Mouss</h1>
+            <h2>Une adresse locale pour manger chaud, vite et bien servi au Blanc-Mesnil.</h2>
+            <p class="lead-text">
+                Kebab, kafta, brochettes, poulet, sandwichs et frites : une maquette pensée pour rendre le restaurant plus visible, plus clair et plus simple à contacter depuis un téléphone.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="tel:0954630987" class="btn-principal"><i class="fa-solid fa-phone"></i> Appeler</a>
+                <a href="#menu" class="btn-secondaire">Voir le menu</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Chez+Mouss+1+Rue+de+la+Concorde+Le+Blanc-Mesnil" target="_blank" class="btn-secondaire">Itinéraire</a>
+            </div>
+        </div>
+
+        <div class="hero-proof-grid">
+            <div class="proof-item">
+                <strong>4.4/5</strong>
+                <span>note Google indiquée</span>
+            </div>
+            <div class="proof-item">
+                <strong>347+</strong>
+                <span>avis Google indiqués</span>
+            </div>
+            <div class="proof-item">
+                <strong>10-20€</strong>
+                <span>prix moyen indiqué</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="specialites">
+        <h2>Les incontournables</h2>
+        <p class="section-pitch">Une sélection simple pour guider rapidement les clients qui découvrent l'adresse.</p>
+
+        <div class="specialites-grid">
+            <article class="specialite-card">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80" alt="Sandwich kebab généreux avec frites">
+                <div>
+                    <p class="tag">Best-seller</p>
+                    <h3>Kebab maison</h3>
+                    <p>Viande marinée, pain chaud, crudités et sauce au choix. Une valeur sûre pour manger vite et bien.</p>
+                </div>
+            </article>
+
+            <article class="specialite-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Brochettes grillées sur barbecue">
+                <div>
+                    <p class="tag">Grill</p>
+                    <h3>Brochettes barbecue</h3>
+                    <p>Un format parfait pour mettre en avant les grillades et donner envie dès la première visite.</p>
+                </div>
+            </article>
+
+            <article class="specialite-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Assiette de viande grillée et accompagnements">
+                <div>
+                    <p class="tag">Assiette</p>
+                    <h3>Kafta & accompagnements</h3>
+                    <p>Une assiette plus complète pour les clients qui veulent manger sur place ou commander un vrai repas.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+     <section id="menu" class="section-dark">
+    <h2>Menu Chez Mouss</h2>
+    <p class="section-pitch">Découvrez l'intégralité de notre carte. Viandes de qualité et cuisson maîtrisée au quotidien.</p>
+
+    <div class="menu-tabs" aria-label="Filtrer le menu">
+        <button class="tab-btn" data-filter="sandwich">Sandwichs & Burgers</button>
+        <button class="tab-btn" data-filter="grillade">Grillades</button>
+        <button class="tab-btn" data-filter="assiette">Assiettes</button>
+        <button class="tab-btn" data-filter="extra">Mezes, Extras & Boissons</button>
+    </div>
+
+    <div style="max-width: 1140px; margin: 0 auto 24px auto; text-align: left; padding: 0 10px;">
+        <p style="background: rgba(255,255,255,0.05); padding: 12px 16px; border-left: 4px solid var(--orange); border-radius: 4px; font-size: 0.9rem; color: #fff; margin-bottom: 10px;">
+            <i class="fa-solid fa-circle-info"></i> <strong>Formule Menu (Sandwichs & Grillades) :</strong> Accompagnez votre plat de frites et d'une boisson 33cl pour seulement <strong>+1,50€</strong>.
+        </p>
+        <p style="background: rgba(255,255,255,0.05); padding: 12px 16px; border-left: 4px solid var(--yellow); border-radius: 4px; font-size: 0.9rem; color: #fff; margin: 0;">
+            <i class="fa-solid fa-plate-wheat"></i> <strong>Accompagnement Assiettes :</strong> Toutes nos assiettes sont copieusement servies avec <strong>blé (bulgour), frites fraîches et salade</strong>.
+        </p>
+    </div>
+
+    <div class="menu-grid">
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Le Kebab</h3>
+                <p>Broche maison, viande émincée grillée et pain chaud.</p>
+            </div>
+            <span>Seul 8.50€<br>Menu 10.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Köfte</h3>
+                <p>Boulettes de viande hachée traditionnelles assaisonnées.</p>
+            </div>
+            <span>Seul 9.00€<br>Menu 10.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Chicken</h3>
+                <p>Blancs de poulet tendres et marinés maison.</p>
+            </div>
+            <span>Seul 9.50€<br>Menu 11.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Steak</h3>
+                <p>Steak haché juteux saisi à la demande.</p>
+            </div>
+            <span>Seul 9.00€<br>Menu 10.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Merguez</h3>
+                <p>Saucisses de bœuf et d'agneau grillées aux épices.</p>
+            </div>
+            <span>Seul 8.50€<br>Menu 10.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Chicken Chika</h3>
+                <p>Recette spéciale de poulet mariné façon Chika.</p>
+            </div>
+            <span>Seul 7.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Ciger (Foie)</h3>
+                <p>Spécialité de dés de foie d'agneau grillés traditionnels.</p>
+            </div>
+            <span>Seul 7.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Burger Classic</h3>
+                <p>Pain bun, steak, fromage fondant et sauce burger.</p>
+            </div>
+            <span>Seul 6.00€<br>Menu 7.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Hamburger</h3>
+                <p>Le format snack simple, rapide et efficace.</p>
+            </div>
+            <span>Seul 4.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="sandwich">
+            <div>
+                <h3>Lahmacun (Pizza Turque)</h3>
+                <p>Fine pâte garnie de viande hachée, tomates et herbes.</p>
+            </div>
+            <span>Seul 4.00€<br>Formule* 10.00€<br><small style="font-size:0.75rem; opacity:0.7;">*(+ Frites + Kebab)</small></span>
+        </article>
+
+        <article class="menu-card" data-category="grillade">
+            <div>
+                <h3>Adana</h3>
+                <p>Brochette de viande hachée d'agneau pimentée au poivre rouge.</p>
+            </div>
+            <span>Seul 9.50€<br>Menu 11.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="grillade">
+            <div>
+                <h3>Agneau</h3>
+                <p>Morceaux d'agneau tendres, marinés et embrochés.</p>
+            </div>
+            <span>Seul 10.00€<br>Menu 11.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="grillade">
+            <div>
+                <h3>Poulet</h3>
+                <p>Brochette de cubes de blanc de poulet épicés doux.</p>
+            </div>
+            <span>Seul 9.50€<br>Menu 11.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="grillade">
+            <div>
+                <h3>Foie d'Agneau</h3>
+                <p>Brochette de foie saisie traditionnellement sur le grill.</p>
+            </div>
+            <span>Seul 9.50€<br>Menu 11.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Kebab</h3>
+                <p>Généreuse découpe de notre viande de broche.</p>
+            </div>
+            <span>13.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Adana</h3>
+                <p>Deux grandes brochettes de viande hachée d'agneau épicée.</p>
+            </div>
+            <span>14.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Bavette</h3>
+                <p>Pièce de boeuf tendre grillée selon vos goûts.</p>
+            </div>
+            <span>15.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Köfte</h3>
+                <p>Assortiment de nos boulettes de viande hachée grillées.</p>
+            </div>
+            <span>13.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Chicken</h3>
+                <p>Émincé de poulet mariné saisi à la plaque.</p>
+            </div>
+            <span>13.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Mouss Kebab <span style="color:var(--yellow); font-size:0.85rem;">⭐ Spécial</span></h3>
+                <p>La grande recette signature exclusive de la maison.</p>
+            </div>
+            <span>16.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Merguez</h3>
+                <p>Saucisses grillées au barbecue de bois.</p>
+            </div>
+            <span>12.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Foie d'Agneau</h3>
+                <p>Dés de foie d'agneau poêlés ou grillés avec soin.</p>
+            </div>
+            <span>13.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Côtelettes</h3>
+                <p>Côtelettes d'agneau grillées, juteuses et assaisonnées.</p>
+            </div>
+            <span>16.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Ailes de Poulet</h3>
+                <p>Ailes de poulet marinées et dorées au grill.</p>
+            </div>
+            <span>15.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Mixte <span style="color:var(--orange); font-size:0.85rem;">🔥 XL</span></h3>
+                <p>Le plateau royal combinant plusieurs de nos meilleures viandes.</p>
+            </div>
+            <span>18.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Agneau</h3>
+                <p>Brochettes de morceaux de viande d'agneau grillés.</p>
+            </div>
+            <span>14.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Poulet</h3>
+                <p>Brochettes de blancs de poulet marinés et grillés.</p>
+            </div>
+            <span>13.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Escalope</h3>
+                <p>Fine escalope de poulet cuite à la plaque.</p>
+            </div>
+            <span>13.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Steak</h3>
+                <p>3 pièces de steaks hachés grillés servis sur assiette.</p>
+            </div>
+            <span>12.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Dorade</h3>
+                <p>Poisson entier sélectionné et grillé à la turque.</p>
+            </div>
+            <span>16.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Iskender</h3>
+                <p>Fines tranches sur lit de pain, sauce tomate, beurre et yaourt.</p>
+            </div>
+            <span>14.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Entrecôte</h3>
+                <p>Généreuse pièce de boeuf pour les amateurs de viande rouge.</p>
+            </div>
+            <span>19.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Végétarienne</h3>
+                <p>Assortiment de légumes grillés, mezes frais et salades.</p>
+            </div>
+            <span>9.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Plat du Jour</h3>
+                <p>La proposition cuisinée traditionnelle changeante du chef.</p>
+            </div>
+            <span>12.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="assiette">
+            <div>
+                <h3>Nuggets</h3>
+                <p>6 pièces de poulet croustillantes accompagnées de frites.</p>
+            </div>
+            <span>6.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Cacık</h3>
+                <p>Yaourt crémeux, concombre râpé, ail et menthe fraîche.</p>
+            </div>
+            <span>4.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Rus Salatası (Salade Russe)</h3>
+                <p>Macédoine de légumes, pommes de terre et mayonnaise.</p>
+            </div>
+            <span>4.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Tarama</h3>
+                <p>Spécialité onctueuse à base d'œufs de cabillaud.</p>
+            </div>
+            <span>4.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Yaprak Sarma</h3>
+                <p>Feuilles de vigne farcies au riz délicatement parfumé.</p>
+            </div>
+            <span>4.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Meze Mixte</h3>
+                <p>Un assortiment découverte de nos entrées froides.</p>
+            </div>
+            <span>6.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Salade Maison</h3>
+                <p>Mélange de crudités fraîches du jour.</p>
+            </div>
+            <span>6.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Salade Bergère</h3>
+                <p>Tomates, concombres, persil, oignons et fromage féta.</p>
+            </div>
+            <span>8.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Salade Poulet</h3>
+                <p>Base de crudités croquantes surmontée de poulet émincé.</p>
+            </div>
+            <span>9.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Salade Thon</h3>
+                <p>Mélange maraîcher, miettes de thon et olives.</p>
+            </div>
+            <span>9.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Barquette de Frites</h3>
+                <p>Portion de frites dorées et croustillantes.</p>
+            </div>
+            <span>Petite 3.00€<br>Grande 5.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Barquette de Blé</h3>
+                <p>Bulgour turc traditionnel cuisiné en sauce tomate.</p>
+            </div>
+            <span>Petite 3.00€<br>Grande 5.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Barquette de Viande seule</h3>
+                <p>Une portion pure de viande kebab à partager.</p>
+            </div>
+            <span>Petite 7.00€<br>Grande 12.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Baklava (3 pièces)</h3>
+                <p>Feuilletés traditionnels au miel et éclats de pistache.</p>
+            </div>
+            <span>3.00€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Boisson fraîche</h3>
+                <p>Canette au choix de 33cl.</p>
+            </div>
+            <span>1.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Grande Boisson</h3>
+                <p>Bouteille format familial de 1.5L.</p>
+            </div>
+            <span>3.50€</span>
+        </article>
+
+        <article class="menu-card" data-category="extra">
+            <div>
+                <h3>Café ou Thé Turc</h3>
+                <p>Boisson chaude authentique pour clore le repas.</p>
+            </div>
+            <span>1.50€</span>
+        </article>
+    </div>
+</section>
+
+    <section id="services">
+    <h2>Services pratiques</h2>
+    <div class="services-grid">
+        <article class="service-card">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h3>À emporter</h3>
+            <p>Tout peut se passer très rapidement, commandez à emporter et le tour est joué !</p>
+        </article>
+        
+        <article class="service-card">
+            <i class="fa-solid fa-motorcycle"></i>
+            <h3>Livraison</h3>
+            <p>Retrouvez toutes nos grillades et sandwichs directement chez vous en quelques clics.</p>
+            <a href="https://www.ubereats.com/fr/store/chez-mouss/gDHFMLQeT0m899kjIqyGfg?diningMode=DELIVERY&mod=storeDeliveryTime&modctx=%257B%2522entryPoint%2522%253A%2522store-auto-surface%2522%252C%2522encodedStoreUuid%2522%253A%2522gDHFMLQeT0m899kjIqyGfg%2522%257D&ps=1&sc=SEARCH_SUGGESTION" target="_blank" rel="noopener noreferrer" class="btn-uber">
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85rem; margin-right: 6px; color: inherit;"></i>Commandez sur Uber Eats
+            </a>
+        </article>
+        
+        <article class="service-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Carte acceptée</h3>
+            <p>Ne nous marchons pas seulement avec l'éspèce, la carte est également acceptée.</p>
+        </article>
+        <article class="service-card">
+            <i class="fa-solid fa-wheelchair"></i>
+            <h3>Accès PMR</h3>
+            <p>Evitez les mauvaises surpirses ! Chez Mouss à un accès PMR pour accueillir tout le monde</p>
+        </article>
+    </div>
+</section>
+
+    <section id="commande" class="cta-section">
+        <div class="cta-content">
+            <p class="tag">Action rapide</p>
+            <h2>Envie de commander ou de passer au restaurant ?</h2>
+            <p>Le site met l'appel, l'itinéraire et les infos importantes au même endroit pour réduire les hésitations.</p>
+            <div class="hero-buttons">
+                <a href="tel:0954630987" class="btn-principal"><i class="fa-solid fa-phone"></i> Appeler maintenant</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Chez+Mouss+1+Rue+de+la+Concorde+Le+Blanc-Mesnil" target="_blank" class="btn-secondaire">Ouvrir Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="avis-section">
+        <h2>Avis clients</h2>
+        <p class="section-pitch">Quelques extraits des plus de 300 avis présents sur Google </p>
+        <div class="avis-container">
+            <article class="avis">
+                <p>"L'accueil toujours sympa, l'établissement est toujours propre, j'aime trop le kebab de Chez Mouss."</p>
+                <div>
+                    <h4>Marc N. ⭐⭐⭐⭐⭐ </h4>
+                    <h5>Avis Google</h5>
+                </div>
+            </article>
+
+            <article class="avis">
+                <p>"Bonsoir
+J'ai adorée la cuisine raffinée l'ambiance la convivialité et l'accueil du personnel auprès de ses clients
+Un accueil chaleureux génial remplie d'amour bravo à vous tous"</p>
+                <div>
+                    <h4>Patricia Duru ⭐⭐⭐⭐⭐ </h4>
+                    <h5>Avis Google</h5>
+                </div>
+            </article>
+
+            <article class="avis">
+                <p>"ce resto est incroyable. J’aime leur kebab et leur pain avec les frites bien chaude. Avec mon ami de college on est alle manger en jour de college le midi on etait bien rassasié!
+Continuer comme ca je planne de revenir bientot!"</p>
+                <div>
+                    <h4>The Weeknd The Goat</h4>
+                    <h5>Avis Google ⭐⭐⭐⭐⭐ </h5>
+                </div>
+            </article>
+
+            <article class="avis">
+                <p>"L'accueil toujours sympa, l'établissement est toujours propre, j'aime trop le kebab de Chez Mouss, une viande bien mariné.
+Ils ont même une cuisson barbecue pour vos brochettes, kefta, etc..."</p>
+                <div>
+                    <h4>Marc N.</h4>
+                    <h5>Avis Google ⭐⭐⭐⭐⭐ </h5>
+                </div>
+            </article>    
+            
+            <article class="avis">
+                <p>"J'ai dégusté un kebab au poulet, et c'était un vrai régal : frais, savoureux, et généreusement garni. Contrairement à d'autres endroits où l'on a souvent l'impression de ne manger que du pain, ici, le sandwich débordait de délicieux morceaux de kebab, un vrai bonheur pour les papilles !"</p>
+                <div>
+                    <h4>Kevin</h4>
+                    <h5>Avis Google ⭐⭐⭐⭐⭐ </h5>
+                </div>
+            </article>
+
+        
+        </div>
+    </section>
+
+    <section id="adresse" class="section-dark">
+        <h2>Nous trouver</h2>
+
+        <div class="side-by-side-grid">
+            <div class="grid-left">
+                <iframe
+                    src="https://www.google.com/maps?q=Chez%20Mouss%201%20Rue%20de%20la%20Concorde%2093150%20Le%20Blanc-Mesnil&output=embed"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="itineraires">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Chez+Mouss+1+Rue+de+la+Concorde+Le+Blanc-Mesnil" target="_blank" class="bouton-itineraire">Google Maps</a>
+                    <a href="https://ul.waze.com/ul?place=ChIJ6TlUC1Vr5kcRo8trqLnjF_w&ll=48.93570710%2C2.46147120&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="bouton-itineraire">Waze</a>
+                </div>
+            </div>
+
+            <div class="grid-right text-left-desktop">
+                <div class="adresse-texte">
+                    <h3><i class="fa-solid fa-location-dot"></i> Adresse</h3>
+                    <p>1 Rue de la Concorde<br>93150 Le Blanc-Mesnil</p>
+                </div>
+
+                <div class="source-bloc">
+                    <h3><i class="fa-solid fa-circle-info"></i> Infos publiques reprises</h3>
+                    <p>Note Google indiquée : 4.4/5. Fourchette de prix indiquée : 10-20€ par personne. Données à vérifier avec le restaurant avant publication officielle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & affluence</h2>
+        <div class="side-by-side-grid">
+            <div class="grid-left text-left-desktop">
+                <h3>Un appel suffit pour confirmer une commande.</h3>
+                <p>La zone contact donne au visiteur une action simple : appeler, vérifier l'adresse ou venir au bon moment.</p>
+
+                <div class="widget-affluence">
+                    <div class="affluence-header">
+                        <span class="affluence-titre">Affluence estimée :</span>
+                        <span id="affluence-badge" class="badge-loading">Calcul...</span>
+                    </div>
+                    <p id="affluence-text" class="affluence-desc">Analyse du créneau en cours...</p>
+                </div>
+            </div>
+
+            <div class="grid-right">
+                <div class="bloc-appel-direct">
+                    <h3><i class="fa-solid fa-phone-volume"></i> Ligne directe</h3>
+                    <p class="tel-numero">09 54 63 09 87</p>
+                    <a href="tel:0954630987" class="bouton-appel-gros">Appeler Chez Mouss</a>
+                    <p class="note-envoi">Numéro public indiqué sur les plateformes d'avis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section id="horaires-bande">
+    <h2>Horaires indicatifs</h2>
+    <div class="grille-horaires">
+        <div class="colonne-jour"><h3>Lun</h3><p>11:30</p><p>23:00</p></div>
+        <div class="colonne-jour"><h3>Mar</h3><p>11:30</p><p>23:00</p></div>
+        <div class="colonne-jour"><h3>Mer</h3><p>11:30</p><p>23:00</p></div>
+        <div class="colonne-jour"><h3>Jeu</h3><p>11:30</p><p>23:00</p></div>
+        <div class="colonne-jour"><h3>Ven</h3><p>11:30</p><p>00:00</p></div>
+        <div class="colonne-jour"><h3>Sam</h3><p>11:30</p><p>00:00</p></div>
+        <div class="colonne-jour"><h3>Dim</h3><p>12:00</p><p>23:00</p></div>
+    </div>
+    <p class="horaire-note">Horaires à confirmer avant publication officielle.</p>
+
+    <div class="credits-footer">
+        <p>Maquette non officielle réalisée comme démonstration par <strong>Ezio Chaix</strong>.</p>
+        <p>© 2026 Chez Mouss - Démo de site vitrine local.</p>
+    </div>
+</section>
+
+<a href="tel:0954630987" class="bouton-appel-flottant" title="Appeler Chez Mouss"><i class="fa-solid fa-phone"></i></a>
+<a href="#accueil" class="bouton-retour-haut" title="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script>
+// Filtre les cartes du menu selon le bouton cliqué.
+const boutonsMenu = document.querySelectorAll('.tab-btn');
+const cartesMenu = document.querySelectorAll('.menu-card');
+
+boutonsMenu.forEach((bouton) => {
+    bouton.addEventListener('click', () => {
+        const filtre = bouton.dataset.filter;
+
+        boutonsMenu.forEach((item) => item.classList.remove('active'));
+        bouton.classList.add('active');
+
+        cartesMenu.forEach((carte) => {
+            const memeCategorie = carte.dataset.category === filtre;
+            const afficherTout = filtre === 'all';
+            carte.classList.toggle('is-hidden', !afficherTout && !memeCategorie);
+        });
+    });
+});
+
+// Donne une estimation simple de l'affluence selon les horaires de repas.
+function calculerAffluence() {
+    const maintenant = new Date();
+    const heure = maintenant.getHours();
+    const badge = document.getElementById('affluence-badge');
+    const texte = document.getElementById('affluence-text');
+
+    if (!badge || !texte) return;
+
+    if (heure >= 11 && heure < 23) {
+        if ((heure >= 12 && heure < 14) || (heure >= 19 && heure < 21)) {
+            badge.className = 'badge-affluence status-rouge';
+            badge.innerText = 'Forte affluence';
+            texte.innerText = "C'est un créneau de repas. Il vaut mieux appeler avant de passer ou commander.";
+        } else if ((heure >= 11 && heure < 12) || (heure >= 18 && heure < 19) || (heure >= 21 && heure < 22)) {
+            badge.className = 'badge-affluence status-orange';
+            badge.innerText = 'Affluence modérée';
+            texte.innerText = "Le service peut commencer à bouger. Un appel rapide évite l'attente.";
+        } else {
+            badge.className = 'badge-affluence status-vert';
+            badge.innerText = 'Moment calme';
+            texte.innerText = 'Bon créneau pour passer plus tranquillement ou poser une question.';
+        }
+    } else {
+        badge.className = 'badge-affluence status-gris';
+        badge.innerText = 'À vérifier';
+        texte.innerText = "Les horaires sont indicatifs sur cette maquette. Confirmez l'ouverture par téléphone.";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', calculerAffluence);
+</script>
+
+</body>
+</html>
