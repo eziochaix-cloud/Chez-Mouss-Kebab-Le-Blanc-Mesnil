@@ -158,8 +158,9 @@ nav {
     overflow: hidden;
     background:
         linear-gradient(90deg, rgba(18, 15, 13, 0.94), rgba(18, 15, 13, 0.74), rgba(18, 15, 13, 0.82)),
-        url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=80") center/cover;
+        url("Chez-Mouss.png") center/cover;
 }
+
 
 .hero-overlay {
     position: absolute;
@@ -361,73 +362,127 @@ nav {
     padding: 24px;
 }
 
-/* --- MENU --- */
+/* ===========================
+            MENU
+=========================== */
+
 .menu-tabs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 30px auto 12px auto;
+    margin: 35px auto;
 }
 
 .tab-btn {
-    min-height: 42px;
-    padding: 10px 16px;
-    border: 1px solid var(--border-dark);
+    padding: 10px 18px;
+    border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.06);
-    color: rgba(255, 255, 255, 0.76);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.25s ease;
-}
-
-.tab-btn.active,
-.tab-btn:hover {
-    background: var(--red);
-    border-color: var(--red);
+    background: rgba(255,255,255,.08);
     color: var(--text-light);
+    cursor: pointer;
+    transition: .25s;
 }
 
+.tab-btn:hover,
+.tab-btn.active {
+    background: var(--red);
+}
+
+/* --- LE CONTENEUR DU MENU (SLIDER) --- */
 .menu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto); /* Parfait pour tes 2 lignes */
+    grid-auto-columns: 320px;
+    gap: 18px;
+    
+    /* 🛑 C'EST ICI QU'ON BLOQUE LE SITE POUR NE PAS DÉBORDER */
+    max-width: 100%; 
+    overflow-x: auto; /* Active le scroll uniquement DANS le menu */
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    margin: 35px auto 0 auto;
+
+    /* Effet d'aimant pour le défilement tactile */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    
+    /* Style de la scrollbar sur Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange) transparent;
 }
 
-.menu-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 24px;
-    text-align: left;
-    background: var(--bg-panel);
-    border: 1px solid var(--border-dark);
-    border-radius: 8px;
-    transition: 0.25s ease;
+/* Style de la scrollbar sur Chrome/Safari/Edge */
+.menu-grid::-webkit-scrollbar {
+    height: 8px;
+}
+.menu-grid::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 20px;
+}
+.menu-grid::-webkit-scrollbar-track {
+    background: transparent;
 }
 
-.menu-card:hover {
-    border-color: var(--orange);
-    transform: translateY(-3px);
+/* Les cartes */
+
+.menu-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px;
+
+    width:320px;
+
+    background:var(--bg-panel);
+
+    border:1px solid var(--border-dark);
+
+    border-radius:12px;
+
+    transition:.25s;
 }
 
-.menu-card h3 {
-    margin-bottom: 8px;
+.menu-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:var(--orange);
 }
 
-.menu-card p {
-    margin-bottom: 0;
+.menu-card h3{
+
+    margin:0 0 6px;
+
+    font-size:1.05rem;
 }
 
-.menu-card span {
-    flex-shrink: 0;
-    color: var(--yellow);
-    font-weight: 800;
+.menu-card p{
+
+    margin:0;
+
+    font-size:.9rem;
+
+    color:rgba(255,255,255,.65);
 }
 
-.menu-card.is-hidden {
-    display: none;
+.menu-card span{
+
+    color:var(--yellow);
+
+    font-weight:700;
+
+    white-space:nowrap;
+}
+
+.menu-card.is-hidden{
+
+    display:none;
 }
 
 /* --- SERVICES --- */
@@ -487,7 +542,7 @@ nav {
     overflow: hidden;
     background:
         linear-gradient(90deg, rgba(18, 15, 13, 0.95), rgba(217, 54, 34, 0.84)),
-        url("https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=1600&q=80") center/cover;
+        url("Mouss-fond.png") center/cover;
 }
 
 .cta-content {
